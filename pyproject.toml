@@ -1,0 +1,28 @@
+[project]
+name = "yellowpages"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Andrew Cook", email = "awcook97@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.11.13",
+    "beautifulsoup4>=4.13.3",
+    "dnspython>=2.7.0",
+    "pandas>=2.2.3",
+    "pathvalidate>=3.2.3",
+    "playwright==1.39.0",
+    "requests>=2.32.3",
+]
+
+[project.scripts]
+yellowpages = "yellowpages:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = []
